@@ -22,6 +22,7 @@ const Add = () => {
     e.preventDefault();
     try {
       await axios.post("http://localhost:8800/anime", anim);
+      console.log("successfully added");
       navigate("/");
     } catch (err) {
       console.log(err);

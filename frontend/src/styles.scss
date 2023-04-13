@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+
 .app {
   height: 100vh;
   padding: 0 100px;
@@ -5,6 +7,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-family: "Roboto Mono", monospace;
 
   .addHome {
     padding: 10px;
@@ -22,6 +25,7 @@
 
   .anime {
     display: flex;
+    gap: 30px;
 
     .anim {
       flex: 1;
@@ -56,9 +60,9 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 300px;
 
     input {
-      width: 250px;
       padding: 10px;
       border: 1px solid gray;
     }

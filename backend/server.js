@@ -28,7 +28,7 @@ app.get("/anime", (req, res) => {
   });
 });
 
-app.post("/anime", (req, res) => {
+app.post("/anime", async (req, res) => {
   const q = "INSERT INTO anime(`title`, `desc`, `rating`, `cover`) VALUES (?)";
 
   const values = [
