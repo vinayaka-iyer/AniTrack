@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;900&family=Puritan:wght@400;700&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;900&family=Poppins:wght@200;300;500&family=Puritan:wght@400;700&family=Roboto+Condensed&display=swap');
+@keyframes transitionIn{
+  from{
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to{
+    opacity : 1;
+    transform: translateY(0);
+  }
+}
+
+// @keyframes zoomInOnHover{
+//   from{
+//     transform: scale(1);
+//   }
+//   to{
+//     transform: scale(1.1);
+//   }
+// }
+
+.zoom{
+  transition: transform 0.25s;
+}
+
+.zoom:hover{
+  transform: scale(1.05);
+}
+
+*{
+  font-family: poppins;
+  font-weight: 200;
+  color: white;
+}
+
+input, textarea{
+  color: black;
+}
+
+.content{
+  animation: transitionIn 0.75s;
+}
+
+
+// div {
+//   visibility: hidden;
+//   opacity: 0;
+//   transition: visibility 0s, opacity 0.5s linear;
+// }
+// div:hover{
+//   visibility: visible;
+//   opacity: 1;
+// }
+
+Link, a{
+  all: inherit;
+}
+
+.add-btn{
+  font-weight: 500;
+  font-size: 19px;
+}
+
+Link:hover{
+  cursor: pointer !important;
+}
+
+.navbar-img-div{
+  margin-right: 20%;
+}
+
+
+.form-img{
+  object-fit: cover;
+  position: fixed;
+  top:0;
+  left:0;  
+  width: 100%;
+  z-index: -1;
+}
+
+button{
+  all: inherit;
+  margin: 0;
+}
+
+.add-btn-div{
+  width: 230px;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  // height: 150px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10000px;
+  margin-left: 4.6%;
+  margin-top: 4%;
+  margin-bottom: 10%;
+}
+
+.home-para{
+  word-wrap: normal;
+  position: relative;
+  left: 10px;
+  margin-top: 6%;
+  width: 28%;
+  color: white;
+  font-size: 28px;
+}
+
+body{
+  background-image: url('src/assets/tanjiro coverpage.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding: 2%;
+}
+
+.background-blur-1{
+  background-color: black;
+  background: linear-gradient(90deg, rgba(0,0,0,0.5019257703081232) 0%, rgba(0,0,0,0.499124649859944) 46%, rgba(2,0,4,0) 100%);
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  // border: 1px solid black;
+  // box-shadow: 10px 10px 10px 10px;
+  opacity: 1;
+  z-index: -10;
+}
+
+.background-blur-2{
+  background-color: black;
+  background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.499124649859944) 46%, rgba(2,0,4,0.5019257703081232) 100%);
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 70%;
+  right:0;
+  width: 30%;
+  // border: 1px solid black;
+  // box-shadow: 10px 10px 10px 10px;
+  opacity: 1;
+  z-index: -10;
+}
+
+.purp-btn{
+  height: 60px;
+  color: white;
+  text-decoration: none;
+  border: none;
+  background-color: rgba(99, 84, 207, 0.81)  ;
+}
+
+label{
+  text-align: left;
+  color: white;
+}
+
+.form-heading{
+  color: white;
+}
+
+input, textarea{
+  border-radius: 10px;
+  border: none;
+}
+
+input{
+  height: 40px;
+}
+
+input:active{
+  border: none
+}
+
+input:focus, textarea:focus{
+  background-color: rgb(255, 239, 242);
+  border: none;
+  outline: none;
+}
+
+.red-btn{
+  background-color: 	rgb(229, 40, 106);
+  height: 60px;
+  color: white;
+  border:none;
+  border-radius: 10000px;
+  flex-direction: column;
+}
+
+.form-div{
+  // border: 1px solid black;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  gap: 5px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.15);
+  // background: linear-gradient(90deg, rgba(0,0,0,0.10136554621848737) 0%, rgba(0,0,0,0.2638305322128851) 46%, rgba(2,0,4,0.09576330532212884) 100%);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  margin-left: 2.5%;
+}
+
+.navbar-right{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navbar-about{
+  // margin-left: 70px;
+  font-weight: 200;
+  margin-right: 60px;
+  font-size: 30px;
+  color: white;
+}
+
+.navbar-profile-img{
+  width: 40px;
+}
+
+.anitrack-logo-name{
+  color: white;
+  font-family: Puritan;
+  font-size: 40px;
+}
+
+
+.app {
+  height: 100vh;
+  padding: 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+
+  .addHome {
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(99, 84, 207, 0.81);
+    width: calc(330/3)px;
+    height: calc(104/3)px;
+    border-radius: 500px;
+    color: white;
+    font-weight: bold;
+  }
+
+  h1 {
+    margin-bottom: 50px;
+  }
+
+  .anime {
+    display: flex;
+    gap: 30px;
+
+    .anim {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      img {
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+      }
+
+      button {
+        padding: 3px 6px;
+        background-color: white;
+        cursor: pointer;
+      }
+      .delete {
+        border: 1px solid rgb(245, 191, 191);
+        color: rgb(242, 100, 100);
+      }
+      .update {
+        border: 1px solid rgb(204, 204, 243);
+        color: rgb(139, 139, 234);
+      }
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+
+    input {
+      padding: 10px;
+      border: 1px solid gray;
+    }
+
+    textarea {
+      padding: 10px;
+    }
+
+    button {
+      border: none;
+      padding: 10px;
+      background-color: white;
+      background-color: teal;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}
